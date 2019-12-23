@@ -1,0 +1,40 @@
+{
+  "name": "@honerlaw/website",
+  "version": "0.0.0",
+  "author": "honerlaw <honerlawd@gmail.com>",
+  "license": "ISC",
+  "main": "src/bootstrap.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honerlaw/codecritique.git"
+  },
+  "bugs": {
+    "url": "https://github.com/honerlaw/codecritique/issues"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "lint": "tslint --project tsconfig.json -c tslint.json 'src/**/*.ts' 'test/**/*.ts'",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/firebase": "3.2.1",
+    "@types/react": "16.9.17",
+    "@types/react-dom": "16.9.4",
+    "@types/react-redux": "7.1.5",
+    "@types/redux": "3.6.0",
+    "ts-loader": "6.2.1",
+    "tslint": "5.20.1",
+    "tslint-loader": "3.5.4",
+    "typescript": "3.7.4",
+    "webpack": "4.41.4",
+    "webpack-cli": "3.3.10"
+  },
+  "dependencies": {
+    "firebase": "7.6.1",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "react-redux": "7.1.3",
+    "redux": "4.0.4"
+  }
+}
