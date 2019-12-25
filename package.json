@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm run lint && npm run build && firebase deploy",
     "build": "lerna run build",
     "lint": "lerna run lint",
+    "start:local": "concurrently -k 'npm --prefix packages/website run watch' 'firebase emulators:start'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^5.0.2",
     "firebase-tools": "^7.11.0",
     "lerna": "^3.19.0"
   }
